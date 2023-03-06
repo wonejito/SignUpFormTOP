@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/script.js" defer></script>
 		<title>Project: Sign-Up Form - The Odin Project</title>
 	</head>
 	<body>
@@ -33,30 +34,24 @@
 							<div class="pair">
 								<div class="widget">
 									<label for="first_name">First Name </label>
-									<input
-										type="text"
-										name="first_name"
-										id="first_name"
-										required
-										placeholder="Jhon"
-									/>
+									<input type="text" name="first_name" id="first_name" placeholder="Jhon" />
 								</div>
 								<!-- widget-divition -->
 								<div class="widget">
 									<label for="last_name">Last Name</label>
-									<input type="text" name="last_name" id="last_name" required placeholder="Pérez" />
+									<input
+										type="text"
+										name="last_name"
+										value="fonse"
+										id="last_name"
+										placeholder="Pérez"
+									/>
 								</div>
 							</div>
 							<div class="pair">
 								<div class="widget">
 									<label for="e_mail">E-mail</label>
-									<input
-										type="email"
-										name="e_mail"
-										id="e_mail"
-										required
-										placeholder="example@example.com"
-									/>
+									<input type="email" name="e_mail" id="e_mail" placeholder="example@example.com" />
 								</div>
 								<!-- widget-divition -->
 								<div class="widget">
@@ -66,7 +61,6 @@
 										name="phone_number"
 										id="phone_number"
 										pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-										required
 										placeholder="888-888-8888"
 									/>
 								</div>
@@ -80,20 +74,20 @@
 										id="password"
 										minlength="5"
 										max="20"
-										required
+										class="error"
 									/>
 								</div>
 								<!-- widget-divition -->
 								<div class="widget">
 									<label for="password_conf">Confirm Password</label>
-									<input type="password" name="password_conf" id="password_conf" required />
+									<input type="password" name="password_conf" id="password_conf" class="error" />
 								</div>
 							</div>
 						</div>
 
 						<!-- // -->
 						<div id="form-second-part">
-							<button type="submit">Create Account</button>
+							<button type="submit" id="submit">Create Account</button>
 							<h4>Already have an account? <a href="#">Log in</a></h4>
 						</div>
 					</form>

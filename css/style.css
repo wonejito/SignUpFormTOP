@@ -131,11 +131,3 @@ h4 {
 input:focus {
 	box-shadow: 1px 2px 2px blue;
 }
-
-/* :invalid {
-	border: 0.1 solid red;
-} */
-
-:required {
-	border: 0.1 solid red;
-}
