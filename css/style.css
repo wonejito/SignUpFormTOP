@@ -21,7 +21,7 @@ body {
 }
 
 #left-side {
-	border: 2px solid brown; /* debug*/
+	/* border: 2px solid brown; */
 	width: 45vw;
 	height: 100%;
 	background: url(/images/background-ice.jpg);
@@ -49,7 +49,7 @@ body {
 	height: auto;
 }
 #right-side {
-	border: 2px solid brown; /* debug*/
+	/* border: 2px solid brown; */
 	width: 100%;
 	height: 100%;
 	/* background: linear-gradient(90deg, #fbb843 50%, #fed78a); */
@@ -57,9 +57,6 @@ body {
 	grid-template-rows: 1fr 2fr;
 }
 
-.division {
-	border: 2px solid red;
-}
 #warning {
 	font-size: smaller;
 	text-align: end;
@@ -68,9 +65,77 @@ body {
 #first {
 	font-size: 25px;
 	text-align: left;
-	margin: 10px;
+	margin-left: 30px;
 }
 
 #second {
 	margin: 10px;
+}
+form {
+	/* background-color: gray; */
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+}
+
+.pair {
+	display: flex;
+	flex-direction: row;
+	column-gap: 100px;
+}
+
+.widget {
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.widget input {
+	width: 300px;
+	height: 30px;
+	border-radius: 5px;
+	border-color: #e5e7eb;
+	font-size: inherit;
+	padding: 1px;
+}
+#form-first-part {
+	/* border: 1px solid red; */
+	margin: 15px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#form-second-part {
+	margin-top: 30px;
+	margin: 30px;
+}
+
+[type="submit"] {
+	width: 200px;
+	height: 4em;
+	border-radius: 25px;
+	border-color: inherit;
+	font-size: 15px;
+	font-weight: bolder;
+	background-color: #f9b336;
+}
+
+a {
+	color: #f9b336;
+}
+h4 {
+	margin-top: 10px;
+}
+input:focus {
+	box-shadow: 1px 2px 2px blue;
+}
+
+/* :invalid {
+	border: 0.1 solid red;
+} */
+
+:required {
+	border: 0.1 solid red;
 }
