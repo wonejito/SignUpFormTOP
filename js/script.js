@@ -3,10 +3,6 @@ let conf = document.querySelector("#password_conf");
 let submitBtn = document.querySelector("#submit");
 let error = document.querySelectorAll(".error");
 
-// password.addEventListener("focus", function () {
-// 	console.log(password);
-// });
-
 conf.addEventListener("focus", function () {
 	conf.addEventListener("keyup", function () {
 		checkIn(password, conf);
